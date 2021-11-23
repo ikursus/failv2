@@ -1,6 +1,6 @@
 <?php require('header.html.php'); ?>
 <main>
-SURAT MASUK
+<?php echo $result; ?>
 </main>
 <!-- Footer -->
 <?php require('footer.html.php'); ?>
