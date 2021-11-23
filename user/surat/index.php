@@ -4,8 +4,10 @@ try {
 
     // User Input Page Data
     $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-    $totalPerPage = 15;
+    $totalPerPage = isset($_GET['total']) ? (int)$_GET['total'] : 10;
     $limit = ( $page > 1 ) ? ($page * $totalPerPage) : 0;
+    $pagePrevious = $page -1;
+    $pageNext = $page +1;
 
     // Data Surat
     $sql = "SELECT * FROM `surat` LIMIT $limit, $totalPerPage";
@@ -14,7 +16,6 @@ try {
 
     // Pagination
     $total = $pdo->query('SELECT * FROM surat')->fetchAll();
-    
     $pages = ceil(count($total) / $totalPerPage);
 
 } catch (PDOException $e) {

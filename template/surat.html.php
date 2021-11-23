@@ -48,11 +48,13 @@
             
             <nav aria-label="Page navigation example">
             <ul class="pagination">
-                <?php for ($number=1 ; $number <= $pages; $number++): ?>
-                <li class="page-item">
-                    <a class="page-link" href="?page=<?php echo $number; ?>"><?php echo $number; ?></a>
-                </li>
-                <?php endfor; ?>
+                <?php if ($pagePrevious > 0): ?>
+                    <li class="page-item"><a class="page-link" href="?page=<?php echo $pagePrevious; ?>">Previous</a></li>
+                <?php endif; ?>
+                
+                <?php if ($pages > 1): ?>
+                    <li class="page-item"><a class="page-link" href="?page=<?php echo $pageNext; ?>">Next</a></li>
+                <?php endif; ?>
             </ul>
             </nav>
             
