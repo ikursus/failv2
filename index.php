@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-<meta name="theme-color" content="#7952b3">
+    <meta name="theme-color" content="#7952b3">
 
 
     <style>
@@ -36,32 +36,38 @@
     <link href="assets/css/signin.css" rel="stylesheet">
   </head>
   <body class="text-center">
-    
-<main class="form-signin">
-  <form action="proses/login.php" method="POST">
-    
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
-    <div class="form-floating">
-      <input type="text" name="username" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Username / No. Kerja</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Kata Laluan</label>
-    </div>
-
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
-  </form>
-</main>
-
+    <main class="form-signin">
 
     
+    
+      <div>
+        <img src="assets/images/Password.jpeg" id="logo">
+      </div>
+
+
+      <form action="proses/login.php" method="POST">
+        
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+        <div class="form-floating">
+          <input type="text" name="username" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Username / No. Kerja</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Kata Laluan</label>
+        </div>
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+      </form>
+    </main>
+
   </body>
 </html>
