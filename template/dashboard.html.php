@@ -2,6 +2,7 @@
 <main>
 <div class="container-fluid px-4">
 
+    
 
     <h1 class="mt-4">Dashboard</h1>
     <ol class="breadcrumb mb-4">
@@ -87,7 +88,7 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                    <?php foreach ($senaraiPengguna as $pengguna): ?>
+                    <?php foreach ($senaraiPengguna->paparSenarai() as $pengguna): ?>
                     <tr>
                         <td><?php echo $pengguna['nama']; ?></td>
                         <td><?php echo $pengguna['emel']; ?></td>
@@ -119,7 +120,7 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                    <?php foreach ($senaraiJabatan as $item): ?>
+                    <?php foreach ($senaraiJabatan->paparSenarai() as $item): ?>
                     <tr>
                         <td><?php echo $item['idno']; ?></td>
                         <td><?php echo $item['knama']; ?></td>

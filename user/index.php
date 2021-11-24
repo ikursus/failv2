@@ -1,26 +1,13 @@
 <?php
-try {
-    require_once(__DIR__ . '/../includes/DB.php');
+// include('../Pengguna.php');
+// include('../Jabatan.php');
 
-    $sql = 'SELECT * FROM `pengguna`';
-    $sqlJabatan = 'SELECT * FROM `jabatan`';
+// $senaraiPengguna = new Pengguna;
+// $senaraiJabatan = new Jabatan;
 
-    $result = $pdo->query($sql);
-    $resultJabatan = $pdo->query($sqlJabatan);
 
-    while ($row = $result->fetch()) {
-        $senaraiPengguna[] = $row;
-    }
-
-    while ($rowJabatan = $resultJabatan->fetch()) {
-        $senaraiJabatan[] = $rowJabatan;
-    }
-
-} catch (PDOException $e) {
-    $message = 'Masalah sambungan ke database: ' . $e->getMessage();
-}
+// echo password_hash('password', PASSWORD_BCRYPT)
 
 
 $assetPath = dirname(dirname($_SERVER["PHP_SELF"]));
-//var_dump($senaraiPengguna);
-require('../template/dashboard.html.php');
+require('../template/userprofile.html.php');
