@@ -16,8 +16,6 @@ try {
         $senaraiJabatan[] = $rowJabatan;
     }
 
-
-
 } catch (PDOException $e) {
     $message = 'Masalah sambungan ke database: ' . $e->getMessage();
 }

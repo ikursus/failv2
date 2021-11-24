@@ -2,11 +2,14 @@
 <main>
 <div class="container-fluid px-4">
 
+    <?php include('alert.html.php'); ?>
 
     <h1 class="mt-4">Senarai Surat</h1>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item active">Senarai Surat</li>
     </ol>
+
+        <?php include('modalSuratMasuk.html.php'); ?>
     
     <div class="card mb-4">
         <div class="card-header">
